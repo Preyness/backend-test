@@ -4,7 +4,6 @@ const app = express();
 const multer = require('multer');
 const path = require('path');
 
-// Ensure the upload directory exists
 const uploadDir = path.join(__dirname, 'uploads');
 if (!fs.existsSync(uploadDir)) {
     fs.mkdirSync(uploadDir);
@@ -29,7 +28,7 @@ app.post('/api/upload', upload.single('file'), (req, res) => {
     res.json(req.file);
 });
 
-// Delete endpoint
+
 app.delete('/api/delete/:filename', (req, res) => {
     const filePath = path.join(uploadDir, req.params.filename);
 

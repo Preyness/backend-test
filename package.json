@@ -1,0 +1,11 @@
+{
+  "name": "backend-test",
+  "version": "1.0.0",
+  "description": "File server",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "author": "Prince Kurt",
+  "license": "ISC"
+}
